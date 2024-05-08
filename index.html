@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Noto+Sans+Bengali:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="./index.css">
 </head>
 <style>
     /* Apply the custom font to specific elements */
@@ -29,7 +29,7 @@
 <body class="">
 
 
-   <nav class="pt-5 px-5 lg:px-0 container mx-auto">
+   <nav class="pt-5 px-5 lg:px-0 max-w-7xl mx-auto">
         <div class="flex items-center  justify-between">
             <h3 class="text-xl font-semibold text-purple-900">Cyber Labs</h3>
             <ul class="flex md:gap-5 gap-2">
@@ -39,8 +39,15 @@
             </ul>
         </div>
    </nav>
+   <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>This is a modal!</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MDMLIcm61qQ?si=PxpV4Rd6mTuDrJTb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
 
-   <section class="container mx-auto">
+   <section class=" max-w-7xl mx-auto">
     <div class="flex md:flex-row flex-col px-5  lg:px-0 justify-around items-center mt-28">
         <div class="">
             <h1 class="md:text-5xl text-3xl text-purple-900 font-semibold px-2 md:px-0 ">Increase company profits and <br> reduce overhead costs by <br> transforming your IT costs</h1>
@@ -59,7 +66,7 @@
               
                 </div>
                 <div>
-                    <img class="  absolute lg:top-20 lg:left-36 md:top-10 md:left-24 top-16 left-32 " src="./Images/Icon - Fill.png" alt="">
+                    <img id="openModalBtn" class="  absolute lg:top-20 lg:left-36 md:top-10 md:left-24 top-16 left-32 " src="./Images/Icon - Fill.png" alt="">
                 </div>
               </div>
                 
@@ -255,5 +262,7 @@
 
 
     
+
+   <script src="./index.js"></script>
 </body>
 </html>
